@@ -19,7 +19,7 @@ date: 2017-09-11
 <h1 class="title">Counting integer points in a convex rational polytope</h1>
 </div>The latex version can be found <a href='/assets/files/barvinok-1.pdf'>here</a> (though Pandoc seems to have done its job rather well)
 <h1 id="problem" class="unnumbered">Problem</h1>
-<p>We have a convex rational polytope and want to count the integer points inside it, that is given <span class="math inline">\(P = \{x \in {\mathbb{Z}}^n, Ax \le B\}\)</span>, we want <span class="math inline">\(\#P\)</span>. The algorithm described is polynomial the number of inequalities <em>with the dimension <span class="math inline">\(n\)</span> fixed</em>.</p>
+<p>We have a convex rational polytope and want to count the integer points inside it, that is given <span class="math inline">\(P = \{x \in {\mathbb{Z}}^n, Ax \le B\}\)</span>, we want <span class="math inline">\(\#P\)</span>. The algorithm described is polynomial in the number of inequalities <em>with the dimension <span class="math inline">\(n\)</span> fixed</em>.</p>
 <h1 id="preface" class="unnumbered">Preface</h1>
 <p>In a period of downtime, I got interested in algebraic number theory and ended up having to count vectors with coefficients limited in size in the kernel of a matrix. Thus I discovered Barvinok’s algorithm. At least two solvers already exist but reinventing the wheel is so fun.</p>
 <p>This algorithm can be implemented from scratch (I only ended up using fplll library, did not try to plug my pseudo-working LLL implementation) while using some beautiful ideas and neat tricks. The presented version is primal half-open variant only, which to me was more easily understandable as it does without the whole notion of polarity.</p>
