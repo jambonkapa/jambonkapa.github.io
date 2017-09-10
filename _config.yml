@@ -81,7 +81,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "a potato and a fish"
   location         :
-  email            :
+  email            : "jambonkapa@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -89,7 +89,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "https://github.com/jambonkapa/"
   gitlab           :
   google_plus      :
   keybase          :
