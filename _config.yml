@@ -35,7 +35,7 @@ staticman:
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
-  path                   : "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
+  path                   : "/_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"
@@ -77,10 +77,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jambon Kappa"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "a potato and a fish"
+  location         :
   email            :
   uri              :
   bitbucket        :
@@ -242,6 +242,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
